@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility classes */
+
+.box {
+  border: 1px solid black;
+}
+
+/* main styles */
+
+.header {
+  padding: 20px;
+}
+
+.container {
+  max-width: 920px;
+  margin-inline: auto;
+  border: 1px solid black;
+}
