@@ -50,8 +50,8 @@ body {
 .navbar {
   padding-inline: var(--padding-1);
   padding-block: var(--padding-0);
-  position: sticky;
 }
+
 
 .nav-items {
   display: flex;
@@ -60,10 +60,10 @@ body {
   padding-inline: var(--default-padding);
 }
 
-.title {
+.title-text {
   font-size: 1.2rem;
   letter-spacing: 2px;
-  font-family: "Caveat", cursive;
+  font-family: "Caveat", sans-serif;
 }
 
 .nav-items-links {
@@ -118,6 +118,11 @@ body {
 
 .profile-bio {
   padding-inline: 15px;
+  padding-block: 10px;
+}
+
+main {
+  height: 100vh;
 }
 
 /* media queries */
@@ -143,6 +148,14 @@ body {
     color: #aaaaaa;
     font-size: 0.7rem;
   }
+
+  .nav-items {
+    justify-content: center;
+  }
+
+  .nav-items-links {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -163,5 +176,13 @@ body {
 
   .profile-bio {
     font-size: 1rem;
+  }
+
+  .nav-items {
+    justify-content: space-between;
+  }
+
+  .nav-items-links {
+    display: block;
   }
 }
